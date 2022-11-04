@@ -7,12 +7,29 @@
     <meta name="description" content="API串接/轉換圖片" />
     <meta name="robots" content="index,follow" />
     <meta name="author" content="Hsieh ShengFeng" />
-    <title>ChangePicture</title>
+    <title>ConnectApi</title>
     <link rel="stylesheet" href="/style/style.css" />
   </head>
   <body>
-    <select class="changeInput" id=""></select>
-    <div class="picDis"></div>
+    <div class="container">
+      <div class="changeContainer">
+        <select class="changeInput" id=""></select>
+        <div class="picDis"></div>
+      </div>
+      <div class="box">
+        <h1>選擇想查詢的地區</h1>
+        <div class="place">
+          <p>地點:</p>
+          <select class="area"></select>
+        </div>
+        <p>溫度: <span class="tem"></span></p>
+        <p>最高溫度: <span class="max-tem"></span></p>
+        <p>最低溫度: <span class="min-tem"></span></p>
+        <p>體感溫度: <span class="feel-like"></span></p>
+        <p>濕度: <span class="humidity"></span></p>
+      </div>
+    </div>
   </body>
   <script src="/app.js"></script>
+  <script src="/weather.js"></script>
 </html>

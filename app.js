@@ -16,7 +16,6 @@ async function showpic() {
       for (let x = 0; x < data.length; x++) {
         if (Input.value == data[x].title) {
           let picture = data[x].url;
-          console.log(picture);
           pic.innerHTML = `<img class= "picStyle" src='${picture}'>`;
         }
       }
